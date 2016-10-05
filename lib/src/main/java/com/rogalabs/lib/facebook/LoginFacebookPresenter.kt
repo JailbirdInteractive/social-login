@@ -56,7 +56,7 @@ class LoginFacebookPresenter(val view: LoginContract.View) : LoginContract.Faceb
         this.callback = callback
         LoginManager.getInstance().logInWithReadPermissions(activity, Arrays.asList("public_profile",
                 "user_friends",
-                "email"))
+                "email","user_about_me","user_likes","user_tagged_places"))
     }
 
     override fun signOut() {
