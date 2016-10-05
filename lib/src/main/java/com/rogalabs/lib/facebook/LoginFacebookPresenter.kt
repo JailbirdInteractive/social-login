@@ -85,7 +85,7 @@ class LoginFacebookPresenter(val view: LoginContract.View) : LoginContract.Faceb
     }
 
     private fun userPicture(id: String?): String {
-        return "https://graph.facebook.com/${id}/picture?type=large"
+        return "http://i.utdstc.com/icons/256/illumenate-android.png"
     }
 
 }
